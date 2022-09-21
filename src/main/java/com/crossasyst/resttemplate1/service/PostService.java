@@ -24,10 +24,7 @@ public class PostService {
 
 //    public PostResponse getPost(Long userId)
 //    {return restTemplate.getForObject(fakeUrl+"/posts/"+userId,PostResponse.class);}
-
-    //    public PostResponse deletePost(Long userId) {
-    //return  restTemplate.getForObject(fakeUrl+"/posts/"+userId,PostResponse.class,userId);
-//    }
+    
     public ResponseEntity<PostRequest[]> getPosts() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
